@@ -11,7 +11,7 @@ This report was written with data from Sep. 25th and before
 ![scatter plot for sleep duration vs. time](./figs/sleep_duration_vs_time_plot.png)
 
 ###### Sleep duration Vs. Day of the Week
-![box plot for sleep duration vs. day of the week](figs/sleep_duration_vs_day_of_the_week_box_plot.png)
+![box plot for sleep duration vs. day of the week](figs/sleep_duration_vs_day_of_the_week.png)
 
 ###### Weight vs. Time
 ![scatter plot for weight vs. time](figs/weight_vs_time.png)
