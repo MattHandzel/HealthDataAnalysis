@@ -17,10 +17,16 @@ The days with the highest average stress (Monday and Thursday) surprised me, Thu
 ![box plot for sleep duration vs. day of the week](figs/box_and_whisker_for_sleep_duration_vs_day_of_the_week.png)
 
 ###### Weight vs. Time
-![scatter plot for weight vs. time](figs/plot_for_weight_and_muscle_mass_vs._time.png)
+![scatter plot for weight vs. time](figs/plot_for_weight_vs._time.png)
 
 ###### Stress Vs. Day of the Week
 ![box plot for stress vs. day of the week](figs/box_and_whisker_for_stress_level_vs_day_of_the_week.png)
 
 ###### Stress Vs. Hour
 ![Alt text](figs/box_and_whisker_for_stress_level_vs_hour_of_the_day.png)
+
+###### Stress. Vs. Day of the Week Correlation Matrix
+![alt text](figs/matrix_for_stress_correlation_matrix_for_days_of_the_week_vs._hour_of_the_day.png)
+
+##### Computer Usage vs. Day of the Week
+![alt text](figs/box_and_whisker_for_computer_usage_vs_day_of_the_week.png)
