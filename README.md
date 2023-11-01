@@ -10,6 +10,9 @@ This report was written with data from Sept. 4-28
 Sleep average of 8 hours 20 minutes per day (increasing trend)
 The days with the highest average stress (Monday and Thursday) surprised me, Thursday makes sense because I have the most classes on those days, but I do not understand Mondays.
 
+###### How I spend my time
+![alt text](pie_for_how_i_spend_my_week_categorized_(hours).png)
+
 ###### Sleep duration Vs. Time
 ![scatter plot for sleep duration vs. time](figs/line_of_best_fit_for_sleep_duration_(hours)_vs._time.png)
 
