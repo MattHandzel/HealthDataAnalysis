@@ -5,13 +5,13 @@ This is a project I want to do as a way to keep track of various health metrics,
 I use a Samsung Galaxy Watch 5 to keep track of a lot of data about myself (sleep, hr, exercise, etc.), and I use a scale with a bluetooth app to weigh myself every morning.
 
 ## Data/Insights
-This report was written with data from Sept. 4-28 
+This report was written with data from Sept. 4-Oct. 30th
 
-Sleep average of 8 hours 20 minutes per day (increasing trend)
-The days with the highest average stress (Monday and Thursday) surprised me, Thursday makes sense because I have the most classes on those days, but I do not understand Mondays.
+###### Weight (& average weight loss per day) vs. time
+![alt text](./figs/plot_for_weight_vs._time.png)
 
 ###### How I spend my time
-![alt text](pie_for_how_i_spend_my_week_categorized_(hours).png)
+![alt text](./figs/pie_for_how_i_spend_my_week_categorized_(hours).png)
 
 ###### Sleep duration Vs. Time
 ![scatter plot for sleep duration vs. time](figs/line_of_best_fit_for_sleep_duration_(hours)_vs._time.png)
