@@ -5,7 +5,7 @@ In this project I will analyze a lot of data about myself and use that to track 
 This is a project that will analyze data from a variety of sources, from my smartwatch (for health-related metrics like sleep, steps walked, hr, etc.) from my phone (used for my location log and to log my weight-training sessions), from my google calendar (to get an idea of how I spend my time), and computer (to understand when and how frequently I use my computer)
 
 ## Data/Insights
-This report was written with data from 2023/09/04 to 2023/11/03 (a total of 61 days).
+This report was written with data from 2023/09/04 to 2023/10/30 (a total of 56 days).
 One critical insight for me during this period is that I was going through a cut, so I wanted to make sure I was losing weight at a healthy rate so that I wouldn't lose too much muscle. I was able to do this by plotting my weight vs. time and then finding the slope of the line of best fit. Which was -1.14 lbs/day (which is a healthy rate of weight loss).
 
 
