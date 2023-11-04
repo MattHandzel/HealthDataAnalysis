@@ -1,11 +1,11 @@
 # Health Data Analysis
-This is a project I want to do as a way to keep track of various health metrics, it is a way I can get insights about my health
+In this project I will analyze a lot of data about myself and use that to track my progress (like how my cut is going) and to figure out how I can improve my health and my life.
 
 ## Equipment
-I use a Samsung Galaxy Watch 5 to keep track of a lot of data about myself (sleep, hr, exercise, etc.), and I use a scale with a bluetooth app to weigh myself every morning.
+This is a project that will analyze data from a variety of sources, from my smartwatch (for health-related metrics like sleep, steps walked, hr, etc.) from my phone (used for my location log and to log my weight-training sessions), from my google calendar (to get an idea of how I spend my time), and computer (to understand when and how frequently I use my computer)
 
 ## Data/Insights
-This report was written with data from Sept. 4-Oct. 30th
+This report was written with data from 2023/09/04 to 2023/10/30 (a total of 57 days).
 
 ###### Weight (& average weight loss per day) vs. time
 ![alt text](./figs/plot_for_weight_vs._time.png)
