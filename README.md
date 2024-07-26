@@ -1,12 +1,12 @@
-# Health Data Analysis
-In this project I will analyze a lot of data about myself and use that to track my progress (like how my cut is going) and to figure out how I can improve my health and my life.
+# Description
+In this project, I collected and analyzed data from a variety of sources (Samsung Galaxy Watch 5, Google Calendar, smart scale, computer activity, etc.), put it all in one place, and then did visualizations about different metrics to figure out trends, correlations, and improve my life. Examples of some things I've explored are how I spend my time, how my weight has been changing since college, how my one rep max has increased at the gym. 
 
 ## Equipment
 This is a project that will analyze data from a variety of sources, from my smartwatch (for health-related metrics like sleep, steps walked, hr, etc.) from my phone (used for my location log and to log my weight-training sessions), from my google calendar (to get an idea of how I spend my time), and computer (to understand when and how frequently I use my computer)
 
 ## Data/Insights
-This report was written with data from 2023/09/04 to 2023/10/30 (a total of 56 days).
-One critical insight for me during this period is that I was going through a cut, so I wanted to make sure I was losing weight at a healthy rate so that I wouldn't lose too much muscle. I was able to do this by plotting my weight vs. time and then finding the slope of the line of best fit. Which was -1.18 lbs/day (which is a healthy rate of weight loss).
+This report was written with data from 2023/08/05 to 2024/05/17 (a total of 286 days).
+One critical insight for me during this period is that I was going through a cut, so I wanted to make sure I was losing weight at a healthy rate so that I wouldn't lose too much muscle. I was able to do this by plotting my weight vs. time and then finding the slope of the line of best fit. Which was -0.1 lbs/day (which is a healthy rate of weight loss).
 
 
 
