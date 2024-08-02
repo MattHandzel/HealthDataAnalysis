@@ -83,7 +83,7 @@ daily_df = daily_df.set_index("date")
 daily_df.index = pd.to_datetime(daily_df.index)
 
 # Excluse some dates from the daily range (the ones that we don't want to care about)
-dates_to_exclude = ["2023-11-11"]
+dates_to_exclude = []
 for date in dates_to_exclude:
   daily_df = daily_df.drop(pd.to_datetime(date).date())
 
@@ -472,6 +472,28 @@ def sum_df_by_variable(df: pd.DataFrame, x_axis, y_axies, modes):
 # # Weight
 
 # %%
+# Steps
+steps = pd.read_csv(galaxy_watch_folder_dir + "tracker.pedometer_day_summary.csv", index_col=False)
+steps = steps.rename(columns={"create_time" : "start_time"})
+steps["start_time"] = steps["start_time"].apply(convert_datetime_to_time_since_last_epoch)
+
+
+steps = do_the_rudamentary_time_changes(steps)
+steps = pd.DataFrame(steps.groupby("date")["step_count"].max()).reset_index()
+
+print(daily_df.head(10))
+
+steps = steps.set_index("date")
+steps.index = pd.to_datetime(steps.index)
+steps = steps.rename({"step_count" : "num_steps"})
+daily_df = union_dataframes(daily_df, steps, "date")
+print(steps.head(10))
+print(daily_df.head(10))
+exit()
+
+
+
+# %%
 weight = pd.read_csv(galaxy_watch_folder_dir + "weight.csv", index_col=False)
 # filter weight
 
@@ -500,7 +522,6 @@ weight.sort_index(inplace=True)
 weight["date"] = weight["start_time"].apply(convert_time_since_last_epoch_to_date)
 weight = weight.set_index("date")
 weight.index = pd.to_datetime(weight.index)
-weight
 
 # add weight data to daily_df
 daily_df = union_dataframes(daily_df, weight, "date")
@@ -1547,7 +1568,9 @@ parse_time = lambda x: datetime.strptime(x, "%Y-%m-%d %H:%M:%S %z")
 
 last_commit_time = parse_time(last_commit)
 daily_df.to_csv("./data/daily_df.csv")
-if current_time - last_commit_time < timedelta(days=1):
+print(last_commit_time)
+print(current_date)
+if current_date - last_commit_time < timedelta(days=1):
     print("We don't need to commit again")
     raise Exception("We don't need to commit again")
 
