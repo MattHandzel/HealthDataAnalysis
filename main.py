@@ -477,7 +477,6 @@ steps = pd.read_csv(galaxy_watch_folder_dir + "tracker.pedometer_day_summary.csv
 steps = steps.rename(columns={"create_time" : "start_time"})
 steps["start_time"] = steps["start_time"].apply(convert_datetime_to_time_since_last_epoch)
 
-
 steps = do_the_rudamentary_time_changes(steps)
 steps = pd.DataFrame(steps.groupby("date")["step_count"].max()).reset_index()
 
@@ -485,11 +484,10 @@ print(daily_df.head(10))
 
 steps = steps.set_index("date")
 steps.index = pd.to_datetime(steps.index)
-steps = steps.rename({"step_count" : "num_steps"})
+steps = steps.rename(columns ={"step_count" : "num_steps"})
 daily_df = union_dataframes(daily_df, steps, "date")
 print(steps.head(10))
 print(daily_df.head(10))
-exit()
 
 
 
@@ -1570,9 +1568,9 @@ last_commit_time = parse_time(last_commit)
 daily_df.to_csv("./data/daily_df.csv")
 print(last_commit_time)
 print(current_date)
-if current_date - last_commit_time < timedelta(days=1):
-    print("We don't need to commit again")
-    raise Exception("We don't need to commit again")
+# if current_date - last_commit_time < timedelta(days=1):
+#     print("We don't need to commit again")
+#     raise Exception("We don't need to commit again")
 
 
 command = ("git add README.md && git commit -a -m \"Updated README.md\" && git push")
