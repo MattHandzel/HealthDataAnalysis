@@ -1,6 +1,9 @@
 # Description
 In this project, I collected and analyzed data from a variety of sources (Samsung Galaxy Watch 5, Google Calendar, smart scale, computer activity, etc.), put it all in one place, and then did visualizations about different metrics to figure out trends, correlations, and improve my life. Examples of some things I've explored are how I spend my time, how my weight has been changing since college, how my one rep max has increased at the gym. 
 
+![image](https://github.com/user-attachments/assets/467effc4-9929-4305-ab7b-92c3a0d860d2)
+I also created an [interactive visualization](https://matthandzel.github.io/CS416-narrative-visualization-final-project/) for my Data Visualization class
+
 ## Equipment
 This is a project that will analyze data from a variety of sources, from my smartwatch (for health-related metrics like sleep, steps walked, hr, etc.) from my phone (used for my location log and to log my weight-training sessions), from my google calendar (to get an idea of how I spend my time), and computer (to understand when and how frequently I use my computer)
 
